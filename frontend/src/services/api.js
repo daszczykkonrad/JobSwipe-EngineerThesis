@@ -1,7 +1,7 @@
 // frontend/src/services/api.js
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const BASE_URL = 'http://localhost:3000/api'; // change to your server IP when testing on device
+const BASE_URL = 'http://localhost:8000/api'; // change to your server IP when testing on device
 
 async function getToken() {
   return await AsyncStorage.getItem('token');

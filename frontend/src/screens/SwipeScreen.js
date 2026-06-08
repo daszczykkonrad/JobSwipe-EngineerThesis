@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
   },
   likeStamp: { right: 24, borderColor: '#16A34A' },
   nopeStamp: { left: 24, borderColor: '#DC2626' },
-  stampText: { fontSize: 22, fontWeight: '900', color: 'inherit' },
+  stampText: { fontSize: 22, fontWeight: '900', color: '#111' },
   badge: {
     alignSelf: 'flex-start', borderRadius: 20,
     paddingHorizontal: 12, paddingVertical: 4, marginBottom: 12,
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12, paddingVertical: 8, alignSelf: 'flex-start',
   },
   payText: { fontSize: 15, fontWeight: '600', color: '#15803D' },
-  buttons: { flexDirection: 'row', gap: 40 },
+  buttons: { flexDirection: 'row', justifyContent: 'space-between', width: 180 },
   button: {
     width: 64, height: 64, borderRadius: 32,
     justifyContent: 'center', alignItems: 'center',

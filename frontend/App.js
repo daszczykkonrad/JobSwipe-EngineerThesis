@@ -30,11 +30,16 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Login">
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        {user ? (
           <Stack.Screen name="Swipe" component={SwipeScreen} />
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Register" component={RegisterScreen} />
-          <Stack.Screen name="Swipe" component={SwipeScreen} />
+        ) : (
+          <>
+            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Register" component={RegisterScreen} />
+            <Stack.Screen name="Swipe" component={SwipeScreen} />
+          </>
+        )}
       </Stack.Navigator>
     </NavigationContainer>
   );
